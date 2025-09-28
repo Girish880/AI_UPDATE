@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi-Agent Game Tester</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Multi-Agent Game Tester</h1>
+
+    <section>
+      <h2>1️⃣ Plan</h2>
+      <input type="text" id="targetUrl" placeholder="Enter target URL" />
+      <button onclick="plan()">Generate Candidates</button>
+      <pre id="planOutput"></pre>
+    </section>
+
+    <section>
+      <h2>2️⃣ Rank</h2>
+      <button onclick="rank()">Select Top 10</button>
+      <pre id="rankOutput"></pre>
+    </section>
+
+    <section>
+      <h2>3️⃣ Execute</h2>
+      <button onclick="execute()">Run Tests</button>
+      <pre id="executeOutput"></pre>
+    </section>
+
+    <section>
+      <h2>4️⃣ Analyze</h2>
+      <button onclick="analyze()">Generate Report</button>
+      <pre id="analyzeOutput"></pre>
+    </section>
+
+    <section>
+      <h2>📑 Final Report</h2>
+      <button onclick="fetchReport()">Fetch Report</button>
+      <pre id="reportOutput"></pre>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
